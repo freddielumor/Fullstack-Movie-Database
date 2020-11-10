@@ -1,0 +1,19 @@
+{
+  "name": "fullstack-movie-database-server",
+  "version": "1.0.0",
+  "description": "Fullstack Movie Database Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Freddie Lumor",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.4.0",
+    "mongoose": "^5.10.13",
+    "nodemon": "^2.0.6"
+  }
+}
