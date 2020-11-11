@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux'
+import moviesReducer from '../reducers/moviesReducer'
 
 export const rootReducer = combineReducers({
-  movies: () => 1,
+  movies: moviesReducer,
 })
 
 export type AppState = ReturnType<typeof rootReducer>

@@ -1,7 +1,7 @@
 {
-  "name": "client",
+  "name": "fullstack-movie-database-client",
   "version": "1.0.0",
-  "description": "fullstack-movie-database-client",
+  "description": "Fullstack Movie Database Client",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development --open --hot",

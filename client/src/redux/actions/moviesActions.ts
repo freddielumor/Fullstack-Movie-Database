@@ -29,15 +29,15 @@ export const getMovieListError = (payload: string): AppActions => {
   }
 }
 
-export function getMovieListData() {
+export function getMovieList() {
   return async (dispatch: Dispatch<AppActions>) => {
     dispatch(getMovieListStart())
 
     try {
       const response = await fetchData(MOVIE_LIST_ENDPOINT)
-      dispatch(getMovieListSucess(response.data))
+      dispatch(getMovieListSucess(response.data.results))
     } catch (error) {
-      dispatch(getMovieListError(error.statusText))
+      dispatch(getMovieListError(error.message))
     }
   }
 }

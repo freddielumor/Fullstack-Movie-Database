@@ -4,24 +4,14 @@ import {
   GET_MOVIE_LIST_DATA_ERROR,
   MovieListActionTypes,
 } from '../../types/moviesActionTypes'
-import { AllMovies } from '../../types/movies'
 
-interface IState {
-  movies: AllMovies[]
-  stage: string
-  error: string | null
-}
-
-const initialState: IState = {
+const initialState = {
   movies: [],
   stage: 'pending',
   error: null,
 }
 
-export default function (
-  state = initialState,
-  action: MovieListActionTypes,
-): IState {
+export default function (state = initialState, action: MovieListActionTypes) {
   switch (action.type) {
     case GET_MOVIE_LIST_DATA_START:
       return {
