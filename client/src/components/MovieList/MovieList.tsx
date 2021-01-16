@@ -7,9 +7,9 @@ import {
 } from '../../redux/selectors'
 import { AllMovies } from '../../types/movies'
 
-interface MovieListProps {}
+interface IMovieListProps {}
 
-export const MovieList: React.FC<MovieListProps> = () => {
+export const MovieList: React.FC<IMovieListProps> = () => {
   const dispatch = useDispatch()
   const allMoviesData = useSelector(movieListSelector)
   const stage = useSelector(movieListStageSelector)

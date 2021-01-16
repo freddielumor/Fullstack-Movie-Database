@@ -6,7 +6,9 @@
   "scripts": {
     "start": "webpack serve --mode development --open --hot",
     "build": "webpack --mode production",
-    "check-types": "tsc"
+    "check-types": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "Freddie Lumor",
   "license": "ISC",
@@ -22,7 +24,8 @@
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
     "styled-components": "^5.2.1",
-    "typescript": "^4.0.5"
+    "typescript": "^4.0.5",
+    "use-lodash-debounce": "^1.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
